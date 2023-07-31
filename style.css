@@ -1,0 +1,64 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+
+}
+body{
+    background: linear-gradient(#ff88fd 60%,#ebebeb 70%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100svh;
+    width: 100svw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: #ff; */
+    overflow: hidden;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 17em;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    height: 17em;
+    backdrop-filter: blur(90px);
+    border: #8b8b8b solid 1px;
+    border-radius: 50px;
+}
+form *{
+    border-radius: 100000px;
+    border: none;
+    outline: none;
+    padding: 20px;
+}
+
+form::before{
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: #ebebeb;
+    backdrop-filter: blur(900px);
+    /* z-index: 10000000; */
+    /* border: #8b8b8b solid 1px; */
+    border-radius: 50%;
+}
+form::after{
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: #ff88fd;
+    backdrop-filter: blur(900px);
+    /* z-index: 10000000; */
+    /* border: #8b8b8b solid 1px; */
+    border-radius: 50%;
+}
